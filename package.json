@@ -1,0 +1,27 @@
+{
+  "name": "vesting-batch-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "build.server": "vite build -c adapters/vercel-edge/vite.config.ts",
+    "deploy": "vercel deploy",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.2",
+    "vercel": "^29.1.1",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.2.6",
+    "@superfluid-finance/metadata": "^1.1.11",
+    "sha3": "^2.1.4",
+    "viem": "^1.6.4"
+  }
+}
